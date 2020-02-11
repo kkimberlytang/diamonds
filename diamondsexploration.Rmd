@@ -1,0 +1,27 @@
+---
+title: "diamonds exploration"
+output: html_document
+---
+# reading the excel file 
+```{r}
+library(readxl)
+mydiamonds<-read_excel("diamonds.xlsx")
+```
+# names of variables 
+```{r}
+names(mydiamonds)
+```
+```{r}
+head(mydiamonds)
+```
+```{r}
+mydiamonds$pricetable<-mydiamonds$price+mydiamonds$table
+```
+
+```{r}
+head(mydiamonds$pricetable)
+```
+
+
+
+
